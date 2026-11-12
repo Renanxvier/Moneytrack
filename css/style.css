@@ -1,0 +1,187 @@
+/* ===============================
+    1. CONFIGURAÇÕES GERAIS
+=============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111827; /* Fundo escuro para toda a página */
+    color: #f3f4f6; /* Cor padrão do texto clara */
+    font-family: Arial, sans-serif;
+}
+
+/* ===============================
+    2. CABEÇALHO
+=============================== */
+header {
+    background-color: #1f2937;
+    padding: 20px 40px;
+    border-bottom: 1px solid #374151;
+}
+
+header h1 {
+    color: #00ff2a;
+    font-size: 28px;
+}
+
+header p {
+    color: #9ca3af;
+    margin-top: 5px;
+}
+
+/* ===============================
+    3. CONTEÚDO PRINCIPAL
+=============================== */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;    
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+    4. CARDS FINANCEIROS
+=============================== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+.card h3 {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.balance {
+    color: #00ff2a;
+}
+
+.income {
+    color: #00ff2a;
+}
+
+.expense {
+    color: #ff0000;
+}
+
+/* =================================
+   5. FORMULÁRIO DE TRANSAÇÕES
+================================= */
+.transaction-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #374151;
+}
+
+#transaction-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #d1d5db;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #374151;
+    background-color: #111827;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #00ff2a;
+}
+
+.btn-add {
+    grid-column: 1 / -1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ff2a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #00ff2a;
+}
+
+/* ===============================
+    6. RESPONSIVIDADE
+=============================== */
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    header {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #transaction-form {
+        grid-template-columns: 1fr;
+    }
+    @media (max-width: 600px) {
+    #transaction-form {
+        grid-template-columns: 1fr;
+    }
+} 
+
+/* ===============================
+    7. RODAPÉ (Cole aqui no último lugar)
+=============================== */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #00ff2a;
+}
+}
